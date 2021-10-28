@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/cnrst-sist-2021/static/css/main.a617e044.chunk.css",
+    "main.js": "/cnrst-sist-2021/static/js/main.31f672bd.chunk.js",
+    "main.js.map": "/cnrst-sist-2021/static/js/main.31f672bd.chunk.js.map",
+    "runtime-main.js": "/cnrst-sist-2021/static/js/runtime-main.2343098e.js",
+    "runtime-main.js.map": "/cnrst-sist-2021/static/js/runtime-main.2343098e.js.map",
+    "static/css/2.0a9ec390.chunk.css": "/cnrst-sist-2021/static/css/2.0a9ec390.chunk.css",
+    "static/js/2.4a6bf909.chunk.js": "/cnrst-sist-2021/static/js/2.4a6bf909.chunk.js",
+    "static/js/2.4a6bf909.chunk.js.map": "/cnrst-sist-2021/static/js/2.4a6bf909.chunk.js.map",
+    "static/js/3.57d60ba2.chunk.js": "/cnrst-sist-2021/static/js/3.57d60ba2.chunk.js",
+    "static/js/3.57d60ba2.chunk.js.map": "/cnrst-sist-2021/static/js/3.57d60ba2.chunk.js.map",
+    "index.html": "/cnrst-sist-2021/index.html",
+    "static/css/2.0a9ec390.chunk.css.map": "/cnrst-sist-2021/static/css/2.0a9ec390.chunk.css.map",
+    "static/css/main.a617e044.chunk.css.map": "/cnrst-sist-2021/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.4a6bf909.chunk.js.LICENSE.txt": "/cnrst-sist-2021/static/js/2.4a6bf909.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2343098e.js",
+    "static/css/2.0a9ec390.chunk.css",
+    "static/js/2.4a6bf909.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.31f672bd.chunk.js"
+  ]
+}
