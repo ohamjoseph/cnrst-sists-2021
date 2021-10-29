@@ -30,7 +30,7 @@ export default function App() {
   ]
 
   const card = liens.map((lien,idx) => (
-    <Col xs={4} md={4} className='mt-3'>
+    <Col xs={12} md={4} className='mt-3'>
             
       <Typography gutterBottom variant="h5" component="div">
         {lien.title}
