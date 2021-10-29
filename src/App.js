@@ -51,7 +51,7 @@ export default function App() {
   ));
   
   return (
-    <Router basename="/cnrst-sist-2021" >
+    <Router basename="/cnrst-sists-2021" >
       <div>
         <Navbar bg="dark" variant="dark" expand="lg" >
         <Container>
