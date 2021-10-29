@@ -5,18 +5,18 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import BrowserRouter from 'react-router-dom/BrowserRouter'
 
-// ReactDOM.render((
-//    <BrowserRouter basename={process.env.PUBLIC_URL}>
-//      <App />
-//    </BrowserRouter>
-// ), document.getElementById('root')); 
+ReactDOM.render((
+   <BrowserRouter basename={process.env.PUBLIC_URL}>
+     <App />
+   </BrowserRouter>
+), document.getElementById('root')); 
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

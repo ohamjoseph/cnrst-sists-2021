@@ -51,7 +51,7 @@ export default function App() {
   ));
   
   return (
-    <Router>
+    <Router >
       <div>
         <Navbar bg="dark" variant="dark" expand="lg" >
         <Container>
