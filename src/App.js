@@ -1,8 +1,10 @@
-import { Link,Router } from 'react-router-dom';
-import './App.css';
-import {Navbar,Nav,NavDropdown,Container,Row, Col} from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -10,15 +12,21 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
-function App() {
+import {Navbar,Nav,NavDropdown,Container,Row, Col} from 'react-bootstrap';
+
+import Home from "./Home";
+
+export default function App() {
 
   const liens=[
-    {lien:"https://meet.google.com/vnb-hvhf-zgk",title:'Salle 1'},
-    {lien:"https://meet.google.com/vnb-hvhf-zgk",title:'Salle 2'},
-    {lien:"https://meet.google.com/vnb-hvhf-zgk",title:'Salle 3'},
-    {lien:"https://meet.google.com/vnb-hvhf-zgk",title:'Salle 4'},
-    {lien:"https://meet.google.com/vnb-hvhf-zgk",title:'Salle 5'},
-    {lien:"https://meet.google.com/vnb-hvhf-zgk",title:'Salle 6'},
+        {lien:"https://meet.google.com/vnb-hvhf-zgk",title:'Salle 1'},
+        {lien:"https://meet.google.com/vnb-hvhf-zgk",title:'Salle 2'},
+        {lien:"https://meet.google.com/vnb-hvhf-zgk",title:'Salle 3'},
+        {lien:"https://meet.google.com/vnb-hvhf-zgk",title:'Salle 4'},
+        {lien:"https://meet.google.com/vnb-hvhf-zgk",title:'Salle 5'},
+        {lien:"https://meet.google.com/vnb-hvhf-zgk",title:'Salle 6'},
+    
+    
   ]
 
   const card = liens.map((lien,idx) => (
@@ -41,22 +49,21 @@ function App() {
           
     </Col>
   ));
+  
   return (
-    
-    <div className="App">
-
-          
-      <Navbar bg="dark" variant="dark" expand="lg" >
+    <Router>
+      <div>
+        <Navbar bg="dark" variant="dark" expand="lg" >
         <Container>
           <Navbar.Brand href="#home" text={'white'}>
             <img
           alt="logo"
-          src="/img3.png"
+          src={process.env.PUBLIC_URL + "/img3.png"}
           width="40"
           height="40"
           className="d-inline-block align-top"
         />{' '}
-        Symposium International sur la science et la technologie 2021 </Navbar.Brand>
+        Symposium International sur la Science et la Technologie 2021 </Navbar.Brand>
           {/* <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
@@ -77,17 +84,35 @@ function App() {
         <img
          width="100%"
           alt="logo"
-          src="/bando2.jpg"
+          src={process.env.PUBLIC_URL + "/bando2.jpg"}
           className="d-inline-block align-top"
         />
-      <Container className='mb-5'>
-        <Row>
-          {card}
-        </Row>
-      </Container>
-    </div>
-  
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/users">
+            <Users />
+          </Route>
+          <Route path="/">
+            <Home card={card} />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
-export default App;
+// function Home() {
+//   return <h2>Home</h2>;
+// }
+
+function About() {
+  return <h2>About</h2>;
+}
+
+function Users() {
+  return <h2>Users</h2>;
+}
