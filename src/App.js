@@ -51,7 +51,7 @@ export default function App() {
   ));
   
   return (
-    <Router >
+    <Router basename="/cnrst-sist-2021" >
       <div>
         <Navbar bg="dark" variant="dark" expand="lg" >
         <Container>
@@ -96,7 +96,7 @@ export default function App() {
           <Route path="/users">
             <Users />
           </Route>
-          <Route path="/">
+          <Route exact path="/">
             <Home card={card} />
           </Route>
         </Switch>
